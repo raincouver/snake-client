@@ -20,25 +20,41 @@ const setupInput = function(conn) {
 
     if (key === 'w') {
       connection.write("Move: up");
-      // console.log("Move: up");
 
     }
 
     if (key === 'a') {
       connection.write("Move: left");
-      // console.log("Move: left");
 
     }
 
     if (key === 's') {
       connection.write("Move: down");    
-      // console.log("Move: down");
 
     }
 
     if (key === 'd') {
       connection.write("Move: right");
-      // console.log("Move: right");
+    }
+
+    if (key === 'q') {
+      connection.write("Say: MEOW");
+    }
+
+    if (key === 'e') {
+      connection.write("Say: WOOF");
+    }
+
+    if (key === 'z') {
+      connection.write("Say: HOW R U");
+    }
+
+    if (key === 'x') {
+      connection.write("Say: SO FAR SO GOOD");
+    }
+
+    if (key === 'c') {
+      connection.write("Say: C U LATER");
     }
   };
 

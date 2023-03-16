@@ -14,18 +14,14 @@ const connect = function() {
     // code that does something when the connection is first established
     console.log(`Successfully connected to game server`);
 
-    // conn.write("Name: FBI");
-
   });
 
   conn.on("connect", () => {
     // code that does something when the connection is first established
-    // console.log(`Successfully connected to game server`);
 
     conn.write("Name: FBI");    
-
   });
-  
+
   return conn;
 };
 // console.log("Connecting ...");
