@@ -23,34 +23,16 @@ const connect = function() {
     // console.log(`Successfully connected to game server`);
 
     conn.write("Name: FBI");    
-    // setTimeout(() => {
-    //   conn.write("Move: down");
-    // }, 50);
-    // setTimeout(() => {
-    //   conn.write("Move: down");
-    // }, 100);
-    // setTimeout(() => {
-    //   conn.write("Move: down");
-    // }, 150);
-    // setTimeout(() => {
-    //   conn.write("Move: down");
-    // }, 200);
-    // setInterval(function(){
-    //   conn.write("Move: down");
-    //   conn.write("Move: down");
-    //   conn.write("Move: down");
-    //   conn.write("Move: down");
-    //   conn.write("Move: down");
-    //   conn.write("Move: down");
-    //   conn.write("Move: down");
-    //   conn.write("Move: down");
-    //   conn.write("Move: down");
-    //   conn.write("Move: down");
-    // }, 50); 
-  });
 
+  });
+  
+  return conn;
 };
 // console.log("Connecting ...");
 // connect();
 
-module.exports = connect;
+
+
+module.exports = {
+  connect,
+};
